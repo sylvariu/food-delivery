@@ -1,0 +1,135 @@
+.dish-display{
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 80%;
+}
+
+.dish-display-title{
+    display: flex;
+    align-items: end;
+    color: #787878;
+}
+
+.dish-display-title .back{
+    cursor: pointer;
+}
+
+.dish-display-title .back:hover{
+    color:black;
+}
+
+.dish{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.dish img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dish button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw, 150px);
+    padding: 12px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.dish-counter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #e2e2e2;
+    background-color: #ffffffaa;
+}
+
+.dish-info{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.dish-info-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish .dish-info hr{
+    margin: 5px 0px;
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.dish-info img{
+    cursor: pointer;
+}
+
+.nutrients{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nutrients span{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-weight: 500;
+    font-size: max(3vw,20px);
+}
+
+.dish-ingred{
+    color: #49557E;
+}
+
+.dishes-in-same-category{
+    margin-top: 40px;
+}
+
+.related-dishes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+@media(max-width:1050px){
+    .dish-display{
+        max-width: 100%;
+    }
+
+    .dish-display img{
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 750px) {
+    .dish-display{
+        max-width: 100%;
+    }
+
+    .dish{
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .dish-display img{
+        max-width: none;
+    }
+    .related-dishes{
+        flex-direction: column;
+    }
+}
+
+
+

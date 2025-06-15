@@ -1,0 +1,139 @@
+.cart{
+    margin-top: 50px;
+}
+
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw, 18px);
+    justify-items: center;
+    text-align: center;
+}
+
+
+.cart-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+
+.cart-items-item .dish-img{
+    width: 70px;
+    border-radius: 5px;
+}
+
+.cart hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.cart-item-counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #e2e2e2;
+    background-color: #ffffffaa;
+    max-width: 100px;
+}
+
+.cart-item-counter img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.cart-bottom{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: max(2vw, 20px);
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.total-details{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+.total-details .total-detail{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.total-details .total{
+    color:black;
+}
+
+
+.cart-total button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cart-promo .promo-text{
+    color: #000000;
+}
+
+.promo-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.promo-input input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.promo-mes{
+    padding-top:5px;
+    color:#555;
+}
+
+.promo-input button{
+    width: max(15vw, 20px);
+    padding: 10px 5px;
+    background-color: white;
+    border: 1px solid tomato;
+    color: tomato;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 750px){
+
+     .cart-items-title {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* убираем первый столбец*/
+    }
+
+    .cart-items-title p:first-child {
+        display: none; /* cкрываем Items */
+    }
+    .cart-items-item .dish-img {
+        display: none; /* cкрываем картинку */
+    }
+}
