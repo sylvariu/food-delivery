@@ -8,7 +8,7 @@ import { store } from './pages/data/store.js'
 import { Provider } from 'react-redux'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/food-delivery">
     <Provider store={store}>
       <App />
     </Provider>
