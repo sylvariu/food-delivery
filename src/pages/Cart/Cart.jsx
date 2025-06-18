@@ -100,20 +100,20 @@ const Cart = () => {
           <div className='total-details'>
             <div className="total-detail">
               <p>Subtotal</p>
-              <p>${getTotalCartAmount}</p>
+              <p>${getTotalCartAmount.toFixed(2)}</p>
             </div>
             <div className="total-detail">
               <p>Delivery Fee</p>
-              <p>${getDeliveryFee}</p>
+              <p>${getDeliveryFee.toFixed(2)}</p>
             </div>
             <div className="total-detail">
               <p>Discount</p>
-              <p>${discountAmount}</p>
+              <p>${discountAmount.toFixed(2)}</p>
             </div>
             <hr />
             <div className="total-detail total">
               <b>Total</b>
-              <b>${getTotalCartAmount + getDeliveryFee - discountAmount}</b>
+              <b>${(getTotalCartAmount + getDeliveryFee - discountAmount).toFixed(2)}</b>
             </div>
           </div>
           <button onClick={() => navigate('/order')}>Proceed to checkout</button>
